@@ -4,7 +4,7 @@ class CreatePlanets < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :race
 
-      t:references :character, index: true, foreign_key: true
+      t.references :character, index: true, foreign_key: true
 
       t.timestamps
     end
