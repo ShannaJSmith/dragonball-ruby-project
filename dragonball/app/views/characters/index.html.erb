@@ -1,5 +1,8 @@
 <h1>Characters</h1>
 
+<!-- Bad practice: <%= link_to "Visit Planets Catalogue", "/planets"%> -->
+<%= link_to "Visit Planets Catalogue", planets_path, class: "links"%>
+
 <% @characters.each do |character| %>
 <div class="character">
 <h2>Name: <%= character.name %></h2>

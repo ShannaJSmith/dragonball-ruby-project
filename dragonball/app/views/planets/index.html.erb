@@ -1,9 +1,11 @@
 <h1>Planets</h1>
+<%= link_to "Visit Characters Catalogue", characters_path, class: "links" %>
+<!--<%= link_to "Visit Characters Catalogue", :characters, class: "links" %> %> -->
 
 <% @planets.each do |planet| %>
 <div class="planet">
 <h2>Planet: <%= planet.name %></h2>
 <h2>Race: <%= planet.race %></h2>
-<h2>Character: <%= planet.character %></h2>
+<h2>Character: <%= planet.character.name %></h2>
 </div>
 <% end %>
