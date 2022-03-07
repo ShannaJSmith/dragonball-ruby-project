@@ -1,0 +1,9 @@
+<h1>Planets</h1>
+
+<% @planets.each do |planet| %>
+<div class="planet">
+<h2>Planet: <%= planet.name %></h2>
+<h2>Race: <%= planet.race %></h2>
+<h2>Character: <%= planet.character %></h2>
+</div>
+<% end %>

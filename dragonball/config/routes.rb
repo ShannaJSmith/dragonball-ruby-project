@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :characters
   # resources :characters, only: [:index, :show] # if it reaches 4+ do the alternative
   # resources :characters, except: [:destroy, :create, :update]
+  resources :planets, only: [:index, :show]
 end
